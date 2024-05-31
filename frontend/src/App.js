@@ -1,4 +1,5 @@
 import "./App.css";
+// import { useEffect } from "react";
 // React - Bootstrap & Other packages
 import { Container } from "react-bootstrap";
 import { Routes, Route } from "react-router-dom";
@@ -17,6 +18,45 @@ import PaymentScreen from "./screens/PaymentScreen";
 import PlaceOrderScreen from "./screens/PlaceOrderScreen";
 
 function App() {
+  // async function checkLinks(links) {
+  //   const invalidLinks = [];
+
+  //   for (let i = 0; i < links.length; i++) {
+  //     const link = links[i];
+
+  //     try {
+  //       const response = await fetch(link, { method: "HEAD" });
+  //       if (response.status === 404 || response.redirected) {
+  //         invalidLinks.push(link);
+  //       }
+  //     } catch (error) {
+  //       invalidLinks.push(link);
+  //     }
+  //   }
+
+  //   return invalidLinks;
+  // }
+
+  // useEffect(() => {
+  //   const links = document.getElementsByTagName("a");
+  //   const linksToCheck = [];
+  //   for (let i = 0; i < links.length; i++) {
+  //     const linke = links[i].href;
+  //     linksToCheck.push(linke);
+  //     alert(linke);
+  //   }
+  //   checkLinks(linksToCheck)
+  //     .then((invalidLinks) => {
+  //       // console.log("Invalid Links:", invalidLinks);
+  //       invalidLinks.forEach((link) => {
+  //         console.log("Invalid Link:", link);
+  //       });
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error:", error);
+  //     });
+  // }, []);
+
   return (
     <>
       <Header />
